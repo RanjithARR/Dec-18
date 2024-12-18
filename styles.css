@@ -1,0 +1,15 @@
+app.post('/api/register', (req, res) => {
+    const { name, email, password } = req.body;
+  
+    // Hash password
+    bcrypt.hash(password, 10, (err, hashedPassword) => {
+      if (err) return res.status(500).json({ error: 'Hashing failed' });
+  
+      const sql = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
+      db.query(sql, [name, email, hashedPassword], (err) => {
+        if (err) return res.status(500).json({ error: err.message });
+        res.status(201).json({ message: 'User registered successfully' });
+      });
+    });
+  });
+  

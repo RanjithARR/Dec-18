@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #80ed91, #cfead6);
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: rgba(67, 201, 65, 0.8);
+        }
+        .navbar-brand, .nav-link {
+            color: rgb(12, 12, 12) !important;
+        }
+        .jumbotron {
+            text-align: center;
+            color: rgb(6, 6, 6);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 4rem;
+            border-radius: 15px;
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h4 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HF360</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="jumbotron"  class=".img-fluid" style="background-image: url(./images/veg1.avif); ;">
+        <h1 class="display-4">Welcome to Your Health Journey</h1>
+        <p class="lead">Empower your mind and body with our expert-guided fitness and nutrition plans.</p>
+        <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center" style="background-image: url(./images/green.avif); background-size: cover; height: 50vh; ">
+                    
+                    <h4 >Personal Training</h4>
+                    <p>Customized workout plans tailored to your goals.</p>
+                    
+                </div>
+                <div class="col-md-4 text-center" style="background-image: url(./images/green1.avif); background-size: cover; height: 50vh;">
+                    <h4>Nutrition Coaching</h4>
+                    <p>Expert advice on meal planning and balanced diets.</p>
+                    
+                </div>
+                <div class="col-md-4 text-center" style="background-image: url(./images/green2.avif); background-size: cover; height: 50vh;">
+                    <h4>Group Classes</h4>
+                    <p>Engaging group sessions to stay motivated together.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light" >
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <p class="text-center">We are dedicated to helping individuals achieve their health and fitness goals with personalized plans and a supportive community.</p>
+            <p class="text-center">Join us on this journey to a healthier, happier life.</p>
+            <p class="text-center">At hf360, we are dedicated to providing personalized nutrition guidance, fitness training, actionable tips, and sustainable lifestyle changes. This is the place where your journey to a healthier and fitter you begins.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Health & Fitness. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
